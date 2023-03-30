@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
     --color-body: #000000;
     --color-heading: #000000;
-    --color-base: #f4f6f5;
-    --color-base2: #dde3e0;
-    --color-brand: #47331f;
-    --color-brand2: #715232;
+    --color-base: #c6d8d3;
+    --color-base2: #FDF0D5;
+    --color-brand: #1E4D8C;
+    --color-brand2: #476C9B;
     --sidbar-width: 240px;
-    --font-base: "Bai Jamjuree";
+    --font-base:  "Montserat" , "Bai Jamjuree", sans-serif;
 }
 
 /* Original Color Palette
@@ -104,13 +105,16 @@ img{
     height: 2px;
     background-color: rgba(255, 255, 255, 0.75);
     position: absolute;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     top: 110%;
-    transition: all 0.4s;
+    transition: all 0.5s;
   }
   
  .nav-link:hover::after, .nav-link.active::after {
     width: 100%;
+    left: 0;
+    transform: translateX(0);
   }
 
 
@@ -118,7 +122,7 @@ img{
     .navbar {
         min-height: 100vh;
         width: var(--sidbar-width);
-        background: linear-gradient(rgba(71, 51, 31, 0.8)50%, rgba(0, 0, 0, 0.8)), url("/assets/images/Sidebar-work.jpg");
+        background:  #1E4D8C ;
         background-size: cover;
         background-position: center;
     }
@@ -164,13 +168,16 @@ img{
     height: 2px;
     background-color: var(--color-brand);
     position: absolute;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     top: 110%;
-    transition: all 0.4s;
+    transition: all 0.5s;
 }
 
 .link-custom:hover::after {
     width: 100%;
+    left: 0;
+    transform: translateX(0);
 }
 
 
@@ -220,5 +227,14 @@ img{
     justify-content: center;
     background-color: var(--color-base);
     border-radius: 100px;
+    font-size: 24px;
+}
+
+.langage-icons{
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--color-base);
     font-size: 24px;
 }
