@@ -12,18 +12,6 @@
     --font-base:  "Montserat" , "Bai Jamjuree", sans-serif;
 }
 
-/* Original Color Palette
-:root {
-    --color-body: #b6cbce;
-    --color-heading: #eef3db;
-    --color-base: #033f47;
-    --color-base2: #022a30;
-    --color-brand: #e0f780;
-    --color-brand2: #deff58;
-    --sidbar-width: 240px;
-    --font-base: "Bai Jamjuree";
-} */
-
 body {
     background-color:var(--color-base2);
     color: var(--color-body);
@@ -172,7 +160,6 @@ img{
     transform: translateX(-50%);
     top: 110%;
     transition: all 0.5s;
-    display: inline-block;
 }
 
 .link-custom:hover::after {
@@ -181,6 +168,15 @@ img{
     transform: translateX(0);
 }
 
+/* SKILLS */
+
+.skills-text{
+    min-height: 10rem;
+}
+
+.ul-skills{
+    list-style-type: none;
+  }
 
 /* CARD */
 
@@ -196,9 +192,7 @@ img{
     transform: scale(1.1);
 }
 
-.card-custom-content{
-    height: 14rem;
-}
+
 
 /* CONTACT */
 
